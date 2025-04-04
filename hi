@@ -1,5 +1,5 @@
 
-queueonteleport("loadstring(game:HttpGet('https://pastefy.app/frx4x5U3/raw'))()")
+queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/yeslidezz/fge/refs/heads/main/hi'))()")
 
 local Ores = {"Onyx", "Quartz", "Topaz"} -- If none of these ores can be found u will be serverhopped
 
