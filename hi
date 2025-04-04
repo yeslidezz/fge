@@ -1,0 +1,47 @@
+
+queueonteleport("loadstring(game:HttpGet('https://pastefy.app/frx4x5U3/raw'))()")
+
+local Ores = {"Onyx", "Quartz", "Topaz"} -- If none of these ores can be found u will be serverhopped
+
+getgenv().AuthKey = "HUGE_XyuW1x9224PJ"
+getgenv().LoadSettings = {
+    Example_Setting = Example_Value
+}
+loadstring(game:HttpGet("https://HugeGames.io/ps99"))()
+
+local TeleportService = game:GetService("TeleportService")
+local player = game.Players.LocalPlayer
+
+task.delay(82, function()
+    local cum = false
+
+    while not cum do
+        local dick = false
+        for _, part in ipairs(workspace.__THINGS.BlockWorlds.Blocks_8:GetDescendants()) do
+            if part:IsA("MeshPart") then
+                local id = part:GetAttribute("id")
+                if table.find(Ores, id) then
+                    dick = true
+                    break
+                end
+            end
+        end
+
+        local occ = workspace.__THINGS.BlockWorlds:FindFirstChild("Occlusion_8")
+        if occ and occ:FindFirstChild("Part") and occ.Part.Transparency == 0 then
+            dick = false
+        end
+
+        if not dick then
+            kicked = true
+            task.wait(2)
+            player:Kick("\nRejoining...")
+            task.wait(1)
+            TeleportService:Teleport(game.PlaceId, player)
+        end
+
+        task.wait(1)
+    end
+end)
+
+
